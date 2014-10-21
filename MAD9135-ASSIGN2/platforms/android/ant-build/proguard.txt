@@ -1,0 +1,3 @@
+# view AndroidManifest.xml #generated:6
+-keep class com.algonquincollege.mad9135_assign2.HelloCordova { <init>(...); }
+
