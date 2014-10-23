@@ -25,17 +25,45 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
+
+        <title>MAD9135-ASSIGN2</title>
     </head>
     <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
+        
+        <div class="appMain">
+            <section data-role="page" id="home" class="active">
+               <h2>Your Media: </h2>
+
+        <p>Click a tune below: </p>
+
+       <ul id="podCastList">
+            <li></li>
+       </ul>
+
+        <!--  <input id="downloadPhoneMusic" name="button" type="button" class="btn"value="Search Local Music"> -->
+            
+            </section>
         </div>
+
+        <div class="pageTwo">
+            
+            <section data-role="page" id="two" class="hide">
+
+                <a href="#home" data-role="button">Go home</a></p> 
+                
+                    <div id="mediaButtons">
+                       <a href="#" class="btn large" onclick=""> Play</a>
+                        <a href="#" class="btn large" onclick="pauseAudio();">Pause</a>
+                        <a href="#" class="btn large" onclick="stopAudio();">Stop</a>
+                        <p id="audio_position"></p>
+                    </div>
+
+            </section>
+
+        </div>
+
         <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery-2.1.0.js"></script> 
         <script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>
